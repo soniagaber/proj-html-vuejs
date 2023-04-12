@@ -62,6 +62,7 @@ nav{
     display: flex;
     justify-content: space-between;
     padding-top: 40px;
+    align-items: center;
 }
 
 #header-text{

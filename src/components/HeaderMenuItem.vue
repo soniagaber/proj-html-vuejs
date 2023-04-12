@@ -22,6 +22,9 @@ li{
  font-weight: bold;
  font-size: 0.8em;
  cursor: pointer;
+ &:hover{
+    color:  #FBDB30;
+ }
 }
 
 </style>

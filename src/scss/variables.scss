@@ -12,3 +12,7 @@ $container-width:800px;
         text-transform: uppercase;
         cursor:pointer
 }
+
+@mixin titoloSection(){
+        color: black;
+}

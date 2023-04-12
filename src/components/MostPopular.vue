@@ -38,7 +38,7 @@ export default{
                 <PopularCard v-for="card in cards" :obj="card"></PopularCard>
             </div>
             
-            <button>start your order</button>
+            <button>start your order &nbsp;<i class="fa-solid fa-circle-arrow-right"></i></button>
         </div>
         <div id="backgr-order">
             <img id="wave" src="/img/svg-0.svg" alt="">
@@ -68,6 +68,7 @@ export default{
     #cards-container{
         display: flex;
         justify-content: space-between;
+        gap: 20px;
     }
     img{
         width: 100%;

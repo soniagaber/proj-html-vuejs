@@ -30,7 +30,7 @@ export default{
                 <div id="hungry">Hungry?</div>
                 <div id="great">Great Food</div>
                 <div id="deliv">Delivered</div>
-                <button>view our menu</button>
+                <button>view our menu &nbsp;<i class="fa-solid fa-circle-arrow-right"></i></button>
             </div>
     </div>
     </div>

@@ -11,31 +11,27 @@ export default{
 }
 </script>
 <template>
-    <div id="card-container">
+    <div id="card">
         <img :src="`${obj.img}`" alt="">
-        <div id="nome">{{ obj.nome }}</div>
-        <div id="prezzo">{{ obj.prezzo }}</div>
+        <h3 id="nome">{{ obj.nome }}</h3>
+        <div id="descr">{{ obj.descr }}</div>
     </div>
 </template>
 <style lang="scss" scoped>
 div{
+    color: black;
     display: flex;
     flex-direction: column;
 }
-
-#card-container{
-    width:calc(100%/3 - 20px / 3 * 2)
+#card{
+    width:calc(100% / 2 - 25px / 2);
+    text-align: center;
 }
-
-#nome{
+h3{
     color: #252a33;
-    font-weight: bold;
-    margin-top: 10px;
-    margin-bottom: 3px;
 }
-
-#prezzo{
-color: red;
-font-size: 0.7em;
+#descr{
+    color: #323844;
+    font-size: 0.68em;
 }
 </style>

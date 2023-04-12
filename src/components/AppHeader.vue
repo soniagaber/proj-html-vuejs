@@ -85,16 +85,7 @@ nav{
     font-weight: bold;
    }
    button{
-    background-color: #CD1925;
-    margin-top: 16px;
-    border-radius: 25px;
-    padding: 7px 12px;
-    color: white;
-    border: none;
-    font-size: 0.5em;
-    font-weight: bold;
-    text-transform: uppercase;
-    cursor:pointer
+    @include bottone();
    }
     
 }

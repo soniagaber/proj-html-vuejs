@@ -40,6 +40,10 @@ export default{
             
             <button>start your order</button>
         </div>
+        <div id="backgr-order">
+            <img id="wave" src="/img/svg-0.svg" alt="">
+            <img src="/img/first-order-background-scaled.jpg" alt="">
+        </div>
     </div>
 </template>
 
@@ -54,16 +58,7 @@ export default{
             max-width: $container-width;
         }
         button{
-            background-color: #CD1925;
-            margin-top: 16px;
-            border-radius: 25px;
-            padding: 7px 12px;
-            color: white;
-            border: none;
-            font-size: 0.5em;
-            font-weight: bold;
-            text-transform: uppercase;
-            cursor:pointer;
+            @include bottone();
             }
     }
     h2{
@@ -73,5 +68,14 @@ export default{
     #cards-container{
         display: flex;
         justify-content: space-between;
+    }
+    img{
+        width: 100%;
+    }
+    #wave{
+        position: absolute;
+    }
+    #backgr-order{
+        position: relative;
     }
 </style>

@@ -1,3 +1,4 @@
+<!--componente figlio di "MostPopular", riceve da questo un oggetto, di cui stampa gli elementi in singole cards, che hanno un effetto di hover-->
 <script>
 export default{
     data(){

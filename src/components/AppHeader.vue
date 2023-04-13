@@ -31,6 +31,7 @@ export default{
         +
         </div>
         <div id="container">
+            <!--navbar contenente logo e menu dell'header, i cui elementi vengono stampati dinamicamente dopo averli passati tramite props-->
             <nav>
                 <img src="/img/takeout-logo-mobile.png" alt="">
                 <div>
@@ -50,9 +51,8 @@ export default{
 <style scoped lang="scss">
 @use "../scss/variables" as *;
 #container-sfondo{
-    height: 590px;
     background-image: url('/img/home-background-hero-scaled.jpg');
-    background-position-y: -120px;
+    background-position-y: -90px;
     background-size: cover;
     width: 100%;
     position: relative;
@@ -71,9 +71,8 @@ nav{
 }
 
 #header-text{
-   position: absolute;
-   top: 50%;
-   transform: translateY(-50%);
+    padding-top: 135px;
+    padding-bottom: 250px;
    gap: 0px;
    line-height: 2.45em;
    #hungry{

@@ -1,3 +1,4 @@
+<!--componente che riceve oggetto dal componente padre "MenuCategories" e ne stampa gli elementi suddivise in singole cards, che hanno un effetto di hover-->
 <script>
 export default{
     data(){

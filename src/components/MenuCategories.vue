@@ -1,3 +1,4 @@
+<!--sezione che contiene oggetto cards e lo passa al figlio "CategoriesCard" tramite prop-->
 <script>
 import CategoriesCard from './CategoriesCard.vue';
 export default{

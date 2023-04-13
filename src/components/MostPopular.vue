@@ -1,3 +1,4 @@
+<!--seconda sezione, passa al componente figlio, "PopularCard", oggetto i cui elementi sono da stampare, tramite props-->
 <script>
 import PopularCard from './PopularCard.vue';
 export default{

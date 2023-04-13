@@ -1,3 +1,4 @@
+<!--componente figlio di LatestNews che dal quale riceve oggetto tramite props e ne stampa i vari elementi, organizzandoli in singole card con un effetto di hover al passaggio sopra-->
 <script>
 export default{
     data(){

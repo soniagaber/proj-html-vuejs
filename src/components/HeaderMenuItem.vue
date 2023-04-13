@@ -1,3 +1,4 @@
+<!--componente che stampa tutti gli elementi del menu dell'header, passati tramite props da "AppHeader.vue"-->
 <script>
 export default{
     data(){
@@ -11,6 +12,7 @@ export default{
 }
 </script>
 <template>
+    <!--stampa effettiva degli elementi del menu. se la classe è active, l'elemento sarà colorato di giallo-->
     <div id="links-container">
         <ul v-for="link in obj.links">
                 <li :class="`${link.clas}`">

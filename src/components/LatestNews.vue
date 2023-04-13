@@ -1,3 +1,4 @@
+<!--sezione che contiene oggetto cards, che passa al componente figlio "LatestCard" tramite prop-->
 <script>
 import LatestCard from './LatestCard.vue';
 export default{

@@ -125,7 +125,7 @@ export default{
         width:100%;
         background-image: url('/img/footer-background-scaled.jpg');
         background-size: cover;
-        background-position-y: -200px;
+        background-position-y: -110px;
     }
 #container{
             margin:auto;

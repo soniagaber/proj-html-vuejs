@@ -6,17 +6,32 @@ export default{
         }
     },
     props:{
-        text:String,
+        obj:Object,
     }
 }
 </script>
 <template>
-    <li>
-        {{ text }}
-    </li>
+    <div id="links-container">
+        <ul v-for="link in obj.links">
+                <li>
+                    {{ link }}
+                </li>
+        </ul>
+        <ul v-for="icon in obj.icons">
+                    <li>
+                        <i :class="`${icon}`"></i>
+                    </li>
+        </ul>
+    </div>
     
 </template>
 <style scoped lang="scss">
+
+#links-container{
+        display: flex;
+        flex-direction: row;
+        gap: 27px;
+    }
 
 li{
  font-weight: bold;

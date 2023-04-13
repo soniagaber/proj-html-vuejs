@@ -4,11 +4,18 @@ import HeaderMenuItem from './HeaderMenuItem.vue';
 export default{
     data(){
         return{
-            menu:['Home',
-            'Order Online',
-            'About',
-            'News',
-            'Contact Us']
+            items:[
+                {
+                    links:[
+                    'Home',
+                    'Order Online',
+                    'About',
+                    'News',
+                    'Contact Us',
+                    ],
+                    icons:['fa-solid fa-cart-shopping']
+                }
+            ],
         }
     },
     components:{
@@ -22,9 +29,9 @@ export default{
         <div id="container">
             <nav>
                 <img src="/img/takeout-logo-mobile.png" alt="">
-                <ul>
-                <HeaderMenuItem v-for="men in menu" :text="men"></HeaderMenuItem>
-                </ul>
+                <div>
+                <HeaderMenuItem v-for="item in items" :obj="item"></HeaderMenuItem>
+                </div>
             </nav>
             <div id="header-text">
                 <div id="hungry">Hungry?</div>
@@ -45,12 +52,6 @@ export default{
     background-size: cover;
     width: 100%;
     position: relative;
-    ul{
-        display: flex;
-        flex-direction: row;
-        list-style-type: none;
-        gap: 15px;
-    }
 }
 
 #container{

@@ -57,10 +57,19 @@ export default{
             <div id="cards-container">
                 <CategoriesCard v-for="card in cards" :obj="card"></CategoriesCard>
             </div>
-            <i class="fa-solid fa-leaf"></i>
-            <i class="fa-solid fa-wheat-awn"></i>
-            <i class="fa-sharp fa-solid fa-cow"></i>
-            <i class="fa-solid fa-drumstick-bite"></i>
+            <div id="icons">
+                <i class="fa-solid fa-leaf"></i> 
+                <i class="fa-solid fa-wheat-awn"></i>
+                <i class="fa-sharp fa-solid fa-cow"></i>
+                <i class="fa-solid fa-drumstick-bite"></i>
+            </div>
+            <div id="icons-text">
+                <div> Vegetarian</div>
+                <div> Gluten Free</div>
+                <div> Dairy Free</div>
+                <div> Keto Friendly</div>
+            </div>
+            
         </div>
     </div>
 </template>
@@ -70,6 +79,7 @@ export default{
 #background-container{
     width: 100%;
     background-color: white;
+    padding-top: 75px;
     #container{
         margin: auto;
         max-width: $container-width;
@@ -80,6 +90,7 @@ export default{
 }
 button{
            @include bottone();
+
             }
         #title-and-button{
             display: flex;
@@ -91,8 +102,39 @@ button{
         flex-wrap: wrap;
         justify-content: space-between;
         gap: 13px;
+        margin-top: 28px;
     }
     i{
         color:red
     }
+    button i{color:white}
+    #icons i:first-of-type{
+        color: green;
+    }
+    #icons i:nth-of-type(2){
+        color:#E7B928;
+    }
+    #icons i:nth-of-type(3){
+        color:#0495ce;
+    }
+    #icons i:nth-of-type(4){
+        color:#654321;
+    }
+
+    #icons{
+        font-size: 2.3em;
+        display: flex;
+        justify-content: space-around;
+        margin-top: 47px;
+    }
+    #icons-text{
+        color: black;
+        display: flex;
+        justify-content: space-around;
+        gap: 80px;
+        font-weight: bold;
+        padding-bottom: 85px;
+        font-size: 0.85em;
+    }
+
 </style>

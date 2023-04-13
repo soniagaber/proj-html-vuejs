@@ -12,10 +12,10 @@ export default{
 </script>
 <template>
     <div id="column">
-        <h5 id="titolo">{{ obj.title }}</h5>
-        <ul v-for="link in obj.links">
-                <li>
-                    {{ link }}
+        <h5 id="titolo" :class="`${obj.clas}`">{{ obj.title }}</h5>
+        <ul v-for="link in obj.links" :class="`${obj.clas}`">
+                <li :class="`${link.clas}`">
+                    {{ link.scritta }}
                 </li>
         </ul>
         <ul v-for="open in obj.opening">
@@ -24,12 +24,17 @@ export default{
                 </li>
         </ul>
         <div id="imma-lista">
-            <ul v-for="imma in obj.immagini">
+            <ul v-for="imma in obj.immagini" :class="`${obj.clas}`">
                     <li>
                         <img :src="`${imma}`" alt="">
                     </li>
             </ul>
         </div>
+        <ul v-for="testo in obj.testi" :class="`${obj.clas}`">
+                <li>
+                    {{ testo }}
+                </li>
+        </ul>
     </div>
 </template>
 <style lang="scss" scoped>
@@ -63,6 +68,17 @@ img{
     padding-top: 10px;
 }
 #ora{
+    color: #FBDB30;
+}
+
+.center{text-align: center;
+}
+
+ul.center li img{border: none;
+height: 100px;
+width: 100px;}
+
+.active{
     color: #FBDB30;
 }
 </style>

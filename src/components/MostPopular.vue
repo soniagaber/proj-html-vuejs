@@ -33,6 +33,12 @@ export default{
 <template>
     <div id="container-sfondo">
         <div id="container">
+            <div id="barra">
+                <div><i class="fa-regular fa-clock"></i> &nbsp; 24/7 DELIVERY</div>
+                <div><i class="fa-solid fa-burger"></i>  &nbsp; OVER 100 DISHES</div>
+                <div><i class="fa-solid fa-mobile-screen-button"></i>  &nbsp; IN APP ORDERING</div>
+                <div><i class="fa-solid fa-car"></i> &nbsp; FAST DELIVERY</div>
+            </div>
             <h2>Our Most Popular Dishes</h2>
             <div id="cards-container">
                 <PopularCard v-for="card in cards" :obj="card"></PopularCard>
@@ -57,6 +63,7 @@ export default{
             text-align: center;
             margin: auto;
             max-width: $container-width;
+            position: relative;
         }
         button{
             @include bottone();
@@ -81,5 +88,17 @@ export default{
     }
     #backgr-order{
         position: relative;
+    }
+    #barra{
+        color: #252a33;
+        font-weight: bold;
+        font-size: 0.65em;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        position: absolute;
+        top: -96px;
+        background-color: white;
+        padding-top: 30px;
     }
 </style>

@@ -9,34 +9,35 @@ export default{
                     {
                         title:"ORDER ONLINE",
                         links:[
-                            'Appetizers',
-                            'Burgers',
-                            'Pizza',
-                            'Fries',
-                            'Sides',
-                            'Desserts',
-                            'Beverages',
-                            'Specials'
+                        {scritta:'Appetizers'},
+                        {scritta:'Burgers'},
+                        {scritta:'Pizza'},
+                        {scritta:'Fries'},
+                        {scritta:'Sides'},
+                        {scritta:'Desserts'},
+                        {scritta:'Beverages'},
+                        {scritta:'Specials'},
                         ]
                     },
                     {
                         title:"NAVIGATE",
                         links:[
-                            'Home',
-                            'Alternate Home',
-                            'Menu',
-                            'About',
-                            'News',
-                            'Contact Us',
-                            'Cart',
+                            {scritta:'Home',
+                            clas:"active"},
+                            {scritta:'Alternate Home'},
+                            {scritta:'Menu'},
+                            {scritta:'About'},
+                            {scritta:'News'},
+                            {scritta:'Contact Us'},
+                            {scritta:'Cart'},
                         ]
                     },
                     {
                         title:"INFORMATION",
                         links:[
-                            'My Account',
-                            'Terms Of Service',
-                            'Privacy Policy',
+                        {scritta:'My Account'},
+                        {scritta:'Terms Of Service'},
+                        {scritta:'Privacy Policy'},
                         ],
                         immagini:[
                             '/img/app-store-badge-200x67.png',
@@ -78,7 +79,11 @@ export default{
                     },
                     {
                         title:"VOUCHER",
-                        immagini:['/img/footer-coupon-200x200.png']
+                        immagini:['/img/footer-coupon-200x200.png'],
+                        testi:['Just Use The Code',
+                        'FIRSTORDER',
+                        'At Checkout'],
+                        clas:'center',
                     }
                 ],
 

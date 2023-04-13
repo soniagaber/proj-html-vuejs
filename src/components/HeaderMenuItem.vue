@@ -13,8 +13,8 @@ export default{
 <template>
     <div id="links-container">
         <ul v-for="link in obj.links">
-                <li>
-                    {{ link }}
+                <li :class="`${link.clas}`">
+                    {{ link.scritta }}
                 </li>
         </ul>
         <ul v-for="icon in obj.icons">
@@ -40,6 +40,11 @@ li{
  &:hover{
     color:  #FBDB30;
  }
+}
+
+.active{
+    color:#FBDB30;
+    &::after{content:'\f107';}
 }
 
 </style>

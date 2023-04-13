@@ -7,11 +7,12 @@ export default{
             items:[
                 {
                     links:[
-                    'Home',
-                    'Order Online',
-                    'About',
-                    'News',
-                    'Contact Us',
+                    {scritta:'Home ',
+                    clas:"active"},
+                    {scritta:'Order Online'},
+                    {scritta:'About'},
+                    {scritta:'News'},
+                    {scritta:'Contact Us'},
                     ],
                     icons:['fa-solid fa-cart-shopping']
                 }
@@ -26,6 +27,9 @@ export default{
 
 <template>
     <div id="container-sfondo">
+        <div class="fixed">
+        +
+        </div>
         <div id="container">
             <nav>
                 <img src="/img/takeout-logo-mobile.png" alt="">
@@ -92,4 +96,21 @@ nav{
 }
 
 img{height: 34px;}
+div.fixed {
+  position: fixed;
+  top: 7px;
+  right: 15px;
+  width: 35px;
+  height: 35px;
+  background-color: #CD1925;
+  z-index: 3;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  &:hover{
+    background-color: #AA131D;
+  }
+}
 </style>

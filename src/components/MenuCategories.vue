@@ -84,7 +84,7 @@ export default{
         margin: auto;
         max-width: $container-width;
         h2{
-            color: black;
+            @include titoloSection();
         }
     }
 }

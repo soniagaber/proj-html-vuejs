@@ -28,7 +28,9 @@ div{
     text-align: center;
 }
 h3{
+    margin-top: 25px;
     color: #252a33;
+    font-size: 1.5em;
 }
 #descr{
     color: #323844;

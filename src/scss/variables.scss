@@ -4,15 +4,19 @@ $container-width:800px;
         background-color: #CD1925;
         margin-top: 16px;
         border-radius: 25px;
-        padding: 7px 12px;
+        padding: 9px 17px;
         color: white;
         border: none;
-        font-size: 0.5em;
+        font-size: 0.6em;
         font-weight: bold;
         text-transform: uppercase;
-        cursor:pointer
+        cursor:pointer;
+        &:hover{
+                background-color: #AA131D;
+        }
 }
 
 @mixin titoloSection(){
         color: black;
+        font-size: 1.8em;
 }

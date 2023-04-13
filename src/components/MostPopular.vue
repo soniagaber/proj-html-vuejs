@@ -52,6 +52,7 @@ export default{
     #container-sfondo{
         width:100%;
         background-color: white;
+        padding-top: 70px;
         #container{
             text-align: center;
             margin: auto;
@@ -64,11 +65,13 @@ export default{
     h2{
         text-align: center;
         color: black;
+        font-size: 1.8em;
     }
     #cards-container{
         display: flex;
         justify-content: space-between;
         gap: 20px;
+        padding-top: 40px;
     }
     img{
         width: 100%;

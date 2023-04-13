@@ -45,7 +45,9 @@ h2{
     @include titoloSection();
 }
 #background-container{
+    padding-top: 85px;
     background-color: white;
+    padding-bottom: 110px;
     #container{
         margin: auto;
         max-width: $container-width;
@@ -64,5 +66,6 @@ button{
         display: flex;
         justify-content: space-between;
         gap: 25px;
+        margin-top: 30px;
     }
 </style>
